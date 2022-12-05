@@ -23,7 +23,7 @@ class TodoItem extends StatelessWidget {
               BoxShadow(
                   color: Colors.grey.shade500,
                   blurRadius: 15,
-                  offset: Offset(5, 5))
+                  offset: const Offset(5, 5))
             ]),
         child: Row(
           children: [
@@ -45,7 +45,7 @@ class TodoItem extends StatelessWidget {
                       decoration:
                           item.isComplete ? TextDecoration.lineThrough : null)),
             ),
-            Spacer(),
+            const Spacer(),
             Padding(
                 padding: const EdgeInsets.all(6.0),
                 child: IconButton(

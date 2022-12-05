@@ -3,6 +3,8 @@ part of 'todo_bloc.dart';
 @immutable
 abstract class TodoEvent {}
 
+class TodoListUpdatedEvent extends TodoEvent {}
+
 class TodoCompletedEvent extends TodoEvent {
   final Todo todo;
   TodoCompletedEvent({required this.todo});

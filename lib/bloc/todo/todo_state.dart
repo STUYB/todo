@@ -1,17 +1,12 @@
+import 'package:flutter/material.dart';
 import '../../models/todo.dart';
 
-/*
 @immutable
 abstract class TodoState {}
 
-class TodoInitial extends TodoState {
+class TodoLoadingState extends TodoState {}
+
+class TodoLoadedState extends TodoState {
   final List<Todo> items;
-  TodoInitial({required this.items});
-}
-
-*/
-
-class TodoState {
-  List<Todo> items;
-  TodoState({required this.items});
+  TodoLoadedState({required this.items});
 }
